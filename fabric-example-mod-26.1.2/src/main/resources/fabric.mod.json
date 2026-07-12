@@ -1,0 +1,21 @@
+{
+	"schemaVersion": 1,
+	"id": "smpthemedbridge",
+	"version": "1.0.0",
+	"name": "Simple Music Player x ThemedGuiMod Bridge",
+	"description": "Adds Simple Music Player's volume/pause/skip controls to ThemedGuiMod's settings hub (O key).",
+	"authors": ["inari080"],
+	"environment": "client",
+	"entrypoints": {
+		"client": ["com.inari080.smpbridge.SmpBridgeClient"],
+		"themedgui:addon": ["com.inari080.smpbridge.MusicPlayerAddon"]
+	},
+	"depends": {
+		"fabricloader": ">=0.18.0",
+		"fabric-api": "*",
+		"minecraft": "~26.1",
+		"java": ">=25",
+		"simplemusicplayer": "*",
+		"themedgui": "*"
+	}
+}
